@@ -1,0 +1,407 @@
+%% -*- coding:utf-8 -*-
+\subsection{Verbzweitstellung und Voranstellung im Englischen}
+
+
+\frame{
+\frametitle{Extraktion}
+
+
+\begin{itemize}
+\item Auch in Sprachen mit relativ fester Konstituentenstellung ist es mitunter möglich, Konstituenten
+umzustellen:
+\eal
+\ex This book, I read yesterday.
+\ex Yesterday, I read this book.
+\zl
+
+\pause
+
+\item Die germanischen (V2-)Sprachen stellen irgendeine Konstituente vor das finite Verb:
+\eal
+\ex \alert{Ich} habe das Buch gestern gelesen.
+\ex \alert{Das Buch} habe ich gestern gelesen.
+\ex \alert{Gestern} habe ich das Buch gelesen.
+\ex \alert{Gelesen} habe ich das Buch gestern,\\
+    gekauft hatte ich es aber schon vor einem Monat.
+\ex \alert{Das Buch gelesen} habe ich gestern.
+\zl
+
+\end{itemize}
+
+}
+
+
+\frame{
+\frametitle{Extraktion ist nicht satzgebunden}
+
+\begin{itemize}
+\item Extraktion kann über Satzgrenzen hinweggehen:
+\eal
+\ex Chris, David saw.
+\ex Chris, we think that David saw.
+\ex Chris, we think Anna claims that David saw.
+\zl
+
+\pause
+
+\item Im Deutschen wohl eher in den süddeutschen Varietäten, aber:
+
+\eal
+\label{bsp-Fernabhaengigkeit}
+\ex\label{bsp-um-zwei-millionen}
+{}[Um zwei Millionen Mark]$_i$ soll er versucht haben,\\
+{}[eine Versicherung \_$_i$ zu betrügen].\footnote{
+         taz, 04.05.2001, S.\,20.
+}
+\ex
+"`Wer$_i$, glaubt\iw{glauben} er, daß er \_$_i$ ist?"' erregte sich ein Politiker vom Nil.\footnote{
+        Spiegel, 8/1999, S.\,18.
+}
+\ex\label{ex-wen-glaubst-du-dass}
+Wen$_i$ glaubst du, daß ich \_$_i$ gesehen habe.\footnote{
+    \citew[\page84]{Scherpenisse86a}.
+    }
+\ex {}[Gegen ihn]$_i$ falle es den Republikanern hingegen schwerer,\\
+    {}[ [ Angriffe \_$_i$] zu lancieren].\footnote{
+  taz, 08.02.2008, S.\,9.
+}
+\zl
+
+\end{itemize}
+
+
+}
+
+\frame{
+\frametitle{Weitergabe von Information im Baum}
+
+
+%% \centerfit{\begin{tikzpicture}[
+%% level 1+/.style={level distance=3\baselineskip},
+%% frontier/.style={distance from root=12\baselineskip},
+%% connect/.style={semithick,<->,color=green}]
+%% %\draw (-3,-5) to[grid with coordinates] (4,0);
+%% \Tree[.S
+%%         [.\node (NP) {NP}; Chris ]
+%%         [.\node (S/NP) {S/NP};
+%%           [.NP David ] 
+%%           [.\node (VP/NP) {VP/NP};  
+%%             [.V saw ]
+%%             [.\node (NP/NP) {NP/NP}; \trace{} ] ] ] ]
+%% \draw[connect] (NP/NP.north east) [bend right] to (VP/NP.south east);
+%% \draw[connect] (VP/NP.north east) [bend right] to (S/NP.south east);
+%% \draw[connect] (S/NP.north east) [bend right] to (NP);
+%% \end{tikzpicture}}
+
+\medskip
+\centerline{%
+\begin{forest}
+sm edges
+[S
+  [\gruen<3>{NP} [Chris] ]
+  [S/\gruen<2>{NP} 
+    [NP [David] ] 
+    [VP/\gruen<2>{NP}  
+      [V [saw] ]
+      [NP/\gruen<1>{NP} [\trace] ] ] ] ]
+%% todo to do
+%% \draw[connect] (NP/NP.north east) [bend right] to (VP/NP.south east);
+%% \draw[connect] (VP/NP.north east) [bend right] to (S/NP.south east);
+%% \draw[connect] (S/NP.north east) [bend right] to (NP);
+\end{forest}}
+
+\begin{itemize}
+\item Hinten fehlt das Objekt (Lücke, Spur): NP/NP
+\pause
+\item Information über das fehlende Objekt wird an VP- und S-Knoten repräsentiert.
+\pause
+\item Fehlende NP steht vorn. (der so genannte Füller)
+\end{itemize}
+
+}
+
+
+\frame{
+\frametitle{Weitergabe im Baum über größere Entfernungen}
+
+
+%% \centerfit{\scalebox{.7}{%
+%% \begin{tikzpicture}[
+%% level 1+/.style={level distance=3\baselineskip},
+%% frontier/.style={distance from root=21\baselineskip},
+%% connect/.style={semithick,<->,color=green}]
+%% %\draw (-3,-5) to[grid with coordinates] (4,0);
+%% \Tree[.S
+%%         [.\node (NP) {NP}; Chris ]
+%%         [.\node (S/NP1) {S/NP};
+%%           [.NP we ] 
+%%           [.\node (VP/NP1) {VP/NP};  
+%%             [.V think ]
+%%               [.\node (CP/NP) {CP/NP};
+%%                 [.C that ]
+%%                 [.\node (S/NP) {S/NP};
+%%                   [.NP David ] 
+%%                   [.\node (VP/NP) {VP/NP};  
+%%                     [.V saw ]
+%%                     [.\node (NP/NP) {NP/NP}; \trace{} ] ] ] ] ] ] ]
+%% \draw[connect] (NP/NP.north east)  [bend right] to (VP/NP.south east);
+%% \draw[connect] (VP/NP.north east)  [bend right] to (S/NP.south east);
+%% \draw[connect] (S/NP.north east)   [bend right] to (CP/NP.south east);
+%% \draw[connect] (CP/NP.north east)  [bend right] to (VP/NP1.south east);
+%% \draw[connect] (VP/NP1.north east) [bend right] to (S/NP1.south east);
+%% \draw[connect] (S/NP1.north east)  [bend right] to (NP);
+
+%% \end{tikzpicture}}}
+
+
+\centerfit{\scalebox{.8}{%
+\begin{forest}
+sm edges
+[S
+  [\gruen{NP} [Chris] ]
+  [S/\gruen{NP}
+    [NP [we] ] 
+    [VP/\gruen{NP}  
+       [V [think] ]
+       [CP/\gruen{NP}
+         [C [that] ]
+         [S/\gruen{NP}
+            [NP [David] ] 
+            [VP/\gruen{NP}  
+               [V [saw] ]
+               [NP/\gruen{NP} [\trace ] ] ] ] ] ] ] ]
+%% \draw[connect] (NP/NP.north east)  [bend right] to (VP/NP.south east);
+%% \draw[connect] (VP/NP.north east)  [bend right] to (S/NP.south east);
+%% \draw[connect] (S/NP.north east)   [bend right] to (CP/NP.south east);
+%% \draw[connect] (CP/NP.north east)  [bend right] to (VP/NP1.south east);
+%% \draw[connect] (VP/NP1.north east) [bend right] to (S/NP1.south east);
+%% \draw[connect] (S/NP1.north east)  [bend right] to (NP);
+\end{forest}}}
+
+
+}
+
+\frame{
+\frametitle{Schema für Füller-Kopf-Strukturen}
+
+\vfill
+\centerline{
+\begin{forest}
+[{H}
+  [\ibox{1}]
+  [H/\ibox{1}]]
+\end{forest}
+}
+
+\vfill
+
+
+}
+
+
+\frame[shrink]{
+\frametitle{Extraktion + Verbumstellung = V2: Deutsch (SOV)}
+
+
+
+%% \centerfit{\begin{tikzpicture}[
+%% level 1+/.style={level distance=3\baselineskip},
+%% frontier/.style={distance from root=15\baselineskip},
+%% connect/.style={semithick,<->,color=green}]
+%% %\draw (-3,-5) to[grid with coordinates] (4,0);
+%% \Tree[.S
+%%         [.\node (NP) {NP}; \edge[roof]; {[das Buch]$_i$} ]
+%%         [.\node (S/NP) {S/NP};
+%%           [.{V \sliste{ S/\!/V }} 
+%%             [.V liest$_k$ ] ]
+%%            [.\node (S//V/NP) {S$/\!/$V/NP};
+%%              [.\node (NP/NP) {NP/NP}; \trace$_i${} ]
+%%              [.{V$'$$\!/\!/$V}
+%%                [.NP Conny ]
+%%                [.{V$\!/\!/$V} \_$_k$ ] ] ] ] ] ]
+%% \draw[connect] (NP/NP) [bend right] to (S//V/NP.south east);
+%% \draw[connect] (S//V/NP.north east) [bend right] to (S/NP.east);
+%% \draw[connect] (S/NP.north east) [bend right] to (NP);
+%% \end{tikzpicture}}
+
+
+\centerfit{%
+\begin{forest}
+sm edges
+[S
+  [\gruen<2>{NP$_i$} [das Buch, roof] ]
+  [S/\gruen<2>{NP}
+     [V \sliste{ S\gruen<1>{$/\!/$V} } 
+        [\gruen<1>{V} [liest$_j$] ] ]
+     [S\gruen<1>{$/\!/$V}\!\gruen<2>{/NP}
+        [NP\gruen<2>{/NP} [\trace$_i$] ]
+        [V$'$\gruen<1>{$\!/\!/$V}
+           [NP [Conny] ]
+           [V\gruen<1>{$\!/\!/$V} [\_$_j$] ] ] ] ] ] ]
+%% \draw[connect] (NP/NP) [bend right] to (S//V\!/NP.south east);
+%% \draw[connect] (S//V\!/NP.north east) [bend right] to (S/NP.east);
+%% \draw[connect] (S/NP.north east) [bend right] to (NP);
+\end{forest}}
+
+
+}
+
+
+
+
+\frame{
+\frametitle{Extraktion + Verbumstellung = V2: Dänisch (SVO)}
+
+
+\centerfit{\scalebox{.9}{
+\begin{forest}
+sm edges
+[S
+   [NP$_i$ [bogen;Buch.\textsc{def} ] ]
+      [S/NP
+         [V \sliste{ S$/\!/$V }
+           [V [læser$_j$;liest] ] ]
+           [S$/\!/$V\!/NP
+             [NP [Conny;Conny] ]
+             [VP$\!/\!/$V$\!/$NP
+               [V$\!/\!/$V  [\_$_j$] ]
+               [NP/NP [\trace$_i$ ] ] ] ] ] ] 
+%% \draw[connect] (NP/NP.north east) [bend right] to (V/V.south east);
+%% \draw[connect] (V/V.north east) [bend right] to (S//V\!/NP.south east);
+%% \draw[connect] (S//V\!/NP.north east) [bend right] to (S/NP.east);
+%% \draw[connect] (S/NP.north east) [bend right] to (NP);
+\end{forest}
+}}
+
+Das Deutsche unterscheidet sich vom Dänischen in der OV/VO-Stellung und der damit verbundenen
+VP-Bildung, sonst ist bzgl.\ V2 alles gleich.
+
+}
+
+
+
+
+
+%% \frame{
+%% \frametitle{Weitergabe von Information im Baum}
+
+%% \centerfit{\begin{tikzpicture}[
+%% level 1+/.style={level distance=3\baselineskip},
+%% frontier/.style={distance from root=15\baselineskip},
+%% connect/.style={semithick,<->,color=green}]
+%% %\draw (-3,-5) to[grid with coordinates] (4,0);
+%% \Tree[.S
+%%         [.\node (NP) {NP}; wen ]
+%%         [.\node (S/NP) {S/NP};
+%%           [.{V \sliste{ S/\!/V }} 
+%%             [.V glaubst$_k$ ] ]
+%%            [.\node (S//V\!/NP) {S$/\!/$V\!/NP};
+%%              [.\node (NP/NP) {NP/NP}; \trace{} ]
+%%              [.{V$'$$\!/\!/$V}
+%%                [.NP Conny ]
+%%                [.{V$\!/\!/$V} \_$_k$ ] ] ] ] ] ]
+%% \draw[connect] (NP/NP) [bend right] to (S//V\!/NP.south east);
+%% \draw[connect] (S//V\!/NP.north east) [bend right] to (S/NP.east);
+%% \draw[connect] (S/NP.north east) [bend right] to (NP);
+%% \end{tikzpicture}}
+
+%% }
+
+\subsubsection{Vergleich Englisch, Dänisch, Deutsch}
+
+\frame{
+\frametitle{Vergleich Englisch, Dänisch, Deutsch}
+
+Die Sätze sehen gleich aus, haben aber eine ganz andere Struktur:
+\eal
+\ex Conny reads a book.
+\ex Conny læser en bog.
+\ex Conny liest ein Buch.
+\zl
+
+}
+
+
+\frame{
+\frametitle{Strukturen für Englisch, Dänisch, Deutsch}
+
+
+~\vfill
+\scalebox{.8}{%
+\begin{forest}
+sm edges
+[S
+  [NP [Conny;Conny]]
+  [VP
+    [V [reads;liest]]
+    [NP [a book;ein Buch,baseline,roof]]]]
+\end{forest}}
+\hfill
+\visible<2->{\scalebox{.8}{%
+\begin{forest}
+sm edges
+[S
+   [NP$_i$ [Conny;Conny] ]
+      [S/NP
+         [V \sliste{ S$/\!/$V }
+           [V [læser$_j$;liest] ] ]
+           [S$/\!/$V\!/NP
+             [NP/NP [\trace$_i$ ] ]
+             [VP$\!/\!/$V
+               [V$\!/\!/$V  [\_$_j$] ]
+               [NP [en bog;ein Buch,baseline,roof] ] ] ] ] ] 
+%% \draw[connect] (NP/NP.north east) [bend right] to (V/V.south east);
+%% \draw[connect] (V/V.north east) [bend right] to (S//V\!/NP.south east);
+%% \draw[connect] (S//V\!/NP.north east) [bend right] to (S/NP.east);
+%% \draw[connect] (S/NP.north east) [bend right] to (NP);
+\end{forest}}}
+\hfill
+\visible<3>{\scalebox{.8}{%
+\begin{forest}
+sm edges
+[S
+   [NP$_i$ [Conny] ]
+      [S/NP
+         [V \sliste{ S$/\!/$V }
+           [V [liest$_j$] ] ]
+           [S$/\!/$V\!/NP
+             [NP/NP [\trace$_i$ ] ]
+             [V$'$$\!/\!/$V
+               [NP [ein Buch,baseline,roof] ] 
+               [V$\!/\!/$V  [\_$_j$] ] ] ] ] ] 
+\end{forest}}}
+
+\vfill
+
+}
+
+
+\frame{
+\frametitle{V2 in den germanischen Sprachen}
+
+
+
+\begin{itemize}
+\item Alle germanischen Sprachen (außer Englisch) haben V2-Sätze mit Verbvoranstellung +
+  Voranstellung einer Konstituente.
+\pause
+\item Sätze immer gleich analysiert, auch wenn Subjekt das Vorfeld füllt.
+\pause
+\item V1-Sätze sind nicht unbedingt Fragen:
+\eal
+\ex Gibt er ihm das Buch?
+\ex Gib mir das Buch!
+\zl
+
+\item V2-Sätze nicht unbedingt Aussagen:
+\eal
+\ex Wem gibt er das Buch?
+\ex Jetzt gib ihm das Buch!
+\ex Jetzt gibt er ihm das Buch.
+\zl
+
+\end{itemize}
+
+\pause\pause\pause
+
+}
