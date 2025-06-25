@@ -29,6 +29,11 @@
 %\documentclass[xcolor=dvipsnames,blackandwhite,slidestop,handout,10pt]{beamer}
 
 
+% to fight a strange bug, appears with includeonly only.
+\makeatletter
+\newcounter{Hy@AnnotLevel}
+\makeatother
+
 %\usepackage{hu-beamer-includes-pdflatex}%,beamer-movement}
 
 
@@ -37,12 +42,12 @@
 %\excludecomment{loesungen}
 %\excludecomment{backup}
 
-\includeonly{germanic-phenomena}
+%\includeonly{germanic-phenomena}
 
 %\includeonly{germanisch-psg}
-%\includeonly{germanisch-valenz-scrambling}
-%\includeonly{germanisch-verbstellung,germanisch-extraction}
-%\includeonly{germanisch-passiv}
+\includeonly{germanic-valence-scrambling}
+%\includeonly{germanic-verb-position,germanic-extraction}
+%\includeonly{germanic-passive}
 %\includeonly{germanisch-expletives}
 %\includeonly{geteilte-Folien/00-klimakatastrophe}
 
