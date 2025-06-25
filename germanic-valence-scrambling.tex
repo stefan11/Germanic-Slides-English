@@ -683,15 +683,15 @@ H[\spr \ibox{1}] $\to$ H[\spr \ibox{1} $\oplus$ \sliste{ \ibox{2} }, \comps \eli
 \frametitle{\texttt{append} ($\oplus$)}
 
 \begin{itemize}
-\item \texttt{append} verknüpft zwei Listen: \sliste{ \normalfont a } $\oplus$ \sliste{ \normalfont b } =
+\item \texttt{append} concatenates two lists: \sliste{ \normalfont a } $\oplus$ \sliste{ \normalfont b } =
 \sliste{ \normalfont a, b }. 
 
 \pause
-\item Die Verknüpfung einer Liste L mit der leeren Liste ergibt die Liste L.
+\item Concatenating a list L with the empty list results in L.
 
 \pause
-\item Beispiel: \texttt{append} teilt die Liste \sliste{ NP[\type{nom}], NP[\type{dat}], NP[\type{acc}
-    ] } wie folgt:
+\item Example: \texttt{append} divides the list \sliste{ NP[\type{nom}], NP[\type{dat}],
+    NP[\type{acc} ] } as follows:
 \eal
 \ex \oneline{\eliste{} $\oplus$ \sliste{ NP[\type{nom}], NP[\type{dat}], NP[\type{acc}] } = \sliste{ NP[\type{nom}], NP[\type{dat}], NP[\type{acc}] }}
 \pause
@@ -708,10 +708,10 @@ H[\spr \ibox{1}] $\to$ H[\spr \ibox{1} $\oplus$ \sliste{ \ibox{2} }, \comps \eli
 
 
 \frame{
-\frametitle{Zerlegung der Valenzliste}
+\frametitle{Splitting the valence list}
 
 \begin{itemize}
-\item Specifier-Head Schema in Baum-Notation:\\
+\item Specifier-Head Schema in tree notation:\\
 \vfill
 \begin{forest}
 [H\feattab{\spr \ibox{1}}%,\\
@@ -723,9 +723,9 @@ H[\spr \ibox{1}] $\to$ H[\spr \ibox{1} $\oplus$ \sliste{ \ibox{2} }, \comps \eli
 \end{forest}
 \vfill
 
-\item Schema zerlegt Liste in beliebige Liste \iboxb{1} und eine einelementige Liste (\sliste{ \ibox{2} }).
+\item Schema splits list into an arbitrary list \iboxb{1} and a singleton list (\sliste{ \ibox{2} }).
 
-\item Für unser Beispiel wäre das (\mex{0}c):
+\item For our example, this would be (\mex{0}c):
 \ea
 \oneline{\sliste{ NP[\type{nom}], NP[\type{dat}] } $\oplus$ \sliste{ NP[\type{acc}] } = \sliste{ NP[\type{nom}], NP[\type{dat}], NP[\type{acc}] }}
 \z
@@ -737,11 +737,11 @@ H[\spr \ibox{1}] $\to$ H[\spr \ibox{1} $\oplus$ \sliste{ \ibox{2} }, \comps \eli
 }
 
 \frame{
-\frametitle{Listenzerlegung in Spezifikator-Kopf-Strukturen}
+\frametitle{Splitting the \spr list in specifier head structures}
 
 \begin{itemize}
-\item \sprl hat für gewöhnlich nur ein Element: NP[\type{nom}]/Subjekt für Verben in SVO-Sprachen oder
-  Determiner, wenn der Kopf ein Nomen ist.
+\item The \spr list usually has just one element: NP[\type{nom}]/subject for verbs in SVO languages or
+  determiner, if the head is a noun.
 
 \vfill
 \begin{forest}
@@ -756,7 +756,7 @@ H[\spr \ibox{1}] $\to$ H[\spr \ibox{1} $\oplus$ \sliste{ \ibox{2} }, \comps \eli
 \vfill
 
 \pause
-\item \ibox{1} ist leere Liste, \ibox{2} ist NP[\type{nom}] bzw.\ Det. 
+\item \ibox{1} is the empty list, \ibox{2} is NP[\type{nom}] or Det. 
 
 
 \eal
@@ -771,10 +771,10 @@ H[\spr \ibox{1}] $\to$ H[\spr \ibox{1} $\oplus$ \sliste{ \ibox{2} }, \comps \eli
 \exewidth{(235)}
 
 \frame{
-\frametitle{Kopf hat Wünsche. Schema regelt Passgenauigkeit}
+\frametitle{Head has requirements. Schema cares for fulfillment}
 
 \begin{itemize}
-\item Beschreibung der Tochter muss mit der einzusetzenden Tochter kompatibel sein.
+\item Description of the daughter has to match with the daughter to be inserted.
 
 \vfill
 \centerline{
@@ -788,7 +788,7 @@ H[\spr \ibox{1}] $\to$ H[\spr \ibox{1} $\oplus$ \sliste{ \ibox{2} }, \comps \eli
 \end{forest}}
 
 \vfill
-\ibox{2} wird vom Kopf bestimmt. Linke Tochter muss dazu passen.
+\ibox{2} is determined by the head. Left daughter has to match.
 \pause
 \vfill
 \hfill
@@ -818,11 +818,11 @@ sm edges
 }
 
 \frame{
-\frametitle{Die \comps list im Spezifikatorschema}
+\frametitle{The \comps list in the specifier schema}
 
 
 \begin{itemize}
-\item Die \comps list ist leer. 
+\item The \comps list is empty. 
 \vfill
 \centerline{
 \begin{forest}
@@ -834,7 +834,7 @@ sm edges
   ]]
 \end{forest}}
 \vfill
-Erst alle Komplemente mit einem Kopf kombiniert, dann der Spezifikator.
+First all complements are combined with a head, then the specifier.
 %\eal
 %\ex {}[a [picture [of Kim]]]
 \ea {}[The dolphin [attacked [the shark]]]
@@ -846,10 +846,10 @@ Erst alle Komplemente mit einem Kopf kombiniert, dann der Spezifikator.
 
 
 \frame{
-\frametitle{Nominalstrukturen}
+\frametitle{Nominal structures}
 
 \begin{itemize}
-\item Neben NP + VP-Strukturen wird das Spezifikator-Schema auch in Nominalstrukturen verwendet.
+\item The specifier schema is not just used for NP-VP structures,\\ but also for nominal structures.
 
 \vfill
 \centerline{
@@ -866,13 +866,13 @@ Erst alle Komplemente mit einem Kopf kombiniert, dann der Spezifikator.
 }
 
 
-\subsubsection{Kopf-Komplement-Strukturen}
+\subsubsection{Head complement structures}
 
 \frame{
-\frametitle{Kopf-Komplement-Strukturen}
+\frametitle{Head complement structures}
 
 \begin{itemize}
-\item So genannte Bilder-Nomina verlangen ein Komplement und sind parallel zu Verben in SVO-Strukuren:
+\item Picture nouns require a complement and are parallel to verbs in SVO structures:
 \ea
 a picture of Kim
 \z
@@ -885,7 +885,7 @@ a picture of Kim
 \end{forest}}
 
 \pause
-\item Kombination ditransitives Verb in Teilschritten:
+\item stepwise combination with a ditransitive verb:
 \begin{itemize}
 \item \emph{gave} und \emph{the child} 
 \item \emph{gave the child} und \emph{a book}
@@ -900,7 +900,7 @@ Nobody [[gave [the child]] [a book]].
 }
 
 \frame{
-\frametitle{Satz mit ditransitivem Verb}
+\frametitle{Sentence with a ditransitive verb}
 
 \centerfit{%
 \begin{forest}
@@ -921,17 +921,17 @@ sm edges
        [a book,roof, visible on=3- ] ] ] ]
 \end{forest}}
 
-Schemata lizenzieren Teilbäume.
+Schemata license partial trees.
 
 }
 
 
 \frame{
-\frametitle{Fehlende Details}
+\frametitle{Missing Details}
 
 
 \begin{itemize}
-\item Bisher zur Vereinfachung einige Spezifikation von \spr und \comps weggelassen.
+\item Until now some specifications of \spr and \comps values were omitted.
 
 \centerline{%
 \begin{forest}
@@ -941,18 +941,18 @@ Schemata lizenzieren Teilbäume.
 \end{forest}}
 
 \pause
-\item Wenn der \spr-Wert nicht beschränkt ist, kann er irgendwelche Werte haben.
+\item If the \spr value is not constrained, it can have arbitrary values.
 
 \pause
-\item Zum Beispiel eine Liste mit zwei Genitiven und einem Akkusativ.\\
-Damit könnten wir dann (\mex{1}) analysieren:
+\item For example, a list with two genitive NPs and one accusative NP.\\
+With such a list we could analyze (\mex{1}):
 
 \ea[*]{
 his his him gave the child a book
 }
 \z
 \pause
-\item Müssen \spr und \comps-Werte am Mutterknoten beschränken:
+\item \spr and \comps values have to be provided at the mother nodes:
 
 \ea\label{schema-head-spr-and-head-comps}
 Specifier-Head Schema and Head-Complement Schema (final)
@@ -966,10 +966,10 @@ b. & H[\spr \alert{\ibox{1}}, \comps \ibox{2}] & $\to$ H[\spr \alert{\ibox{1}}, 
 }
 
 \frame{
-\frametitle{Endgültige Versionen der Schemata}
+\frametitle{Final versions of the Schemata}
 
 \begin{itemize}
-\item Specifier-Head-Schema und Head-Complement-Schema:
+\item Specifier-Head-Schema and Head-Complement-Schema:
 \vfill
 \hfill
 \begin{forest}
@@ -1001,9 +1001,9 @@ b. & H[\spr \alert{\ibox{1}}, \comps \ibox{2}] & $\to$ H[\spr \alert{\ibox{1}}, 
 \frametitle{Scrambling}
 
 \begin{itemize}
-\item Bisher ein Element vom Anfang oder Ende der \comps list mit Kopf verbunden.
+\item Until now one element of the beginning or the end of the \comps list is combined with the head.
 \pause
-\item Das funktioniert für das Englische, aber keine Erklärung für Scrambling.
+\item Works for English, but no explanation for scrambling.
 
 \begin{figure}
 \begin{forest}
@@ -1013,7 +1013,7 @@ b. & H[\spr \alert{\ibox{1}}, \comps \ibox{2}] & $\to$ H[\spr \alert{\ibox{1}}, 
 \end{forest}
 \end{figure}
 
-\item Länge von \ibox{1} und \ibox{2} ist nicht beschränkt. Für ditransitives Verb:
+\item Length of \ibox{1} and \ibox{2} is not constrained. For a ditransitive verb:
 
 \eal
 \ex \rot{\eliste{}} $\oplus$ \sliste{ \gruen{NP[\type{nom}]} } $\oplus$ \blau{\sliste{ NP[\type{dat}], NP[\type{acc}] }}
@@ -1025,32 +1025,32 @@ b. & H[\spr \alert{\ibox{1}}, \comps \ibox{2}] & $\to$ H[\spr \alert{\ibox{1}}, 
 %So \ibox{3} in Figure~\ref{fig-head-comp-free} would be \npnom in (\mex{0}a), \npdat in (\mex{0}b) and \npacc in (\mex{0}c).
 
 \pause
-\item \ibox{1} = leere Liste $\to$ VO-Sprachen mit fester Stellung wie Englisch
+\item \ibox{1} = empty List $\to$ VO language with fixed order like English
 \pause
-\item \ibox{2} = leere Liste $\to$ OV-Sprache mit fester Stellung
+\item \ibox{2} = empty List $\to$ OV language with fixed order
 \pause
-\item keine Restriktionen für \ibox{1} und \ibox{2} $\to$ beliebige Anordnung
+\item no restriction for \ibox{1} and \ibox{2} $\to$ free order of arguments
 
 \end{itemize}
 
 }
 
-\subsection{Linearisierungsregeln}
+\subsection{Linearization rules}
 
 \frame{
-\frametitle{Linearisierungsregeln}
+\frametitle{Linearization rules}
 
 \begin{itemize}
-\item Die Schemata sind sehr abstrakt. Ähneln den \xbar-Regeln.
+\item The schemata are very abstract. Like \xbar rules.
 \pause
-\item Allerdings ist Reihenfolge nicht festgelegt.\\
-      In Schemata wie (\mex{1}) kann a vor b und b vor a stehen.
+\item But the order of the daughters is not fixed.\\
+      a can be placed before b or b before a in a schema like (\mex{1}):
 \ea
 m $\to$ a b
 \z
 \pause
-\item Head-Complement-Schema kann beide Abfolgen:\\
-      Kopf Komplement und Komplement Kopf
+\item Head-Complement-Schema can have both orders:\\
+      head before complement and complement before head
 
 \eal
 \ex
@@ -1060,26 +1060,23 @@ dem Kind  ein Buch gibt\\
 \ex gives the child the book
 \zl
 
-
-\item Töchter ohne Beschränkungen machen Unfug:
+\pause
+\item daughters without constraints do unwanted things:
 
 
 \eal
 \ex[]{
-%\gll 
-\dass{} niemand dem Kind  ein Buch vorliest\\
-%     \that{} nobody  the child a book \partic.reads\\
-%\glt `that nobody reads a book to the child'
+\gll \dass{} niemand dem Kind  ein Buch vorliest\\
+     \that{} nobody  the child a book \partic.reads\\
+\glt `that nobody reads a book to the child'
 }
 \ex[*]{ 
-%\gll 
-\dass{} dem Kind  niemand vorliest ein Buch\\
-%     \that{} the child nobody  \partic.reads a book\\
+\gll \dass{} dem Kind  niemand vorliest ein Buch\\
+     \that{} the child nobody  \partic.reads a book\\
 }
 \ex[*]{
-%\gll 
-\dass{} niemand vorliest dem Kind   ein Buch\\
-%     \that{} nobody  \partic.reads the child a book\\
+\gll \dass{} niemand vorliest dem Kind   ein Buch\\
+     \that{} nobody  \partic.reads the child a book\\
 }
 \zl
 \end{itemize}
@@ -1088,7 +1085,7 @@ dem Kind  ein Buch gibt\\
 }
 
 \frame{
-\frametitle{Unerwünschte Struktur}
+\frametitle{Unwanted structure}
 
 % \begin{forest}
 % sm edges
@@ -1115,30 +1112,30 @@ dem Kind  ein Buch gibt\\
 sm edges
 [{V[\comps \sliste{ }]}
   [{V[\comps \sliste{ \ibox{1} }]},s sep+=1em
-    [{V[\comps \sliste{ \ibox{2}, \ibox{1} }]} [\ibox{3} \npnom [niemand]]
-       [{V[\comps \sliste{ \ibox{3}, \ibox{2}, \ibox{1} }]}  [vorliest]]]
-    [\ibox{2} \npdat [dem Kind,roof]]] 
-  [\ibox{1} \npacc [ein Buch,roof]]]]
+    [{V[\comps \sliste{ \ibox{2}, \ibox{1} }]} [\ibox{3} \npnom [niemand;nobody]]
+       [{V[\comps \sliste{ \ibox{3}, \ibox{2}, \ibox{1} }]}  [vorliest;\textsc{part}.reads]]]
+    [\ibox{2} \npdat [dem Kind;the child,roof]]] 
+  [\ibox{1} \npacc [ein Buch;a book,roof]]]
 \end{forest}}
 \vfill
 
 }
 
 \frame{
-\frametitle{Linearisierungsregeln für Kopf und Komplement}
+\frametitle{Linearization rules for head and complement}
 
 \begin{itemize}
-\item Regeln:
+\item rules:
 \eal
 \label{lp-regeln}
 \ex HEAD [\textsc{initial}+] $<$ COMPLEMENT
 \ex COMPLEMENT $<$  HEAD [\textsc{initial}$-$]
 \zl
-\item Deutsche Verben (SOV): \textsc{initial}$-$\\
-      Englische Verben (SVO): \textsc{initial}$+$
+\item German verbs (SOV): \textsc{initial}$-$\\
+      English verbs (SVO): \textsc{initial}$+$
 
 \pause
-\item Deutsche und Englische Nomina: \textsc{initial}$+$
+\item German and English nouns: \textsc{initial}$+$
 
 \end{itemize}
 
@@ -1146,27 +1143,49 @@ sm edges
 
 
 \frame{
-\frametitle{Übungsaufgaben}
+  \frametitle{Exercises -- I}
 
 
 \begin{enumerate}
-\item Geben Sie die Valenzlisten für folgende Wörter an:
+\item Please, provide valence lists for the following words:
 \eal
-\ex lachen
-\ex essen
-\ex übergießen
-\ex bezichtigen
-\ex er
-\ex der
+\ex laugh
+\ex eat
+\ex to douse
+\ex 
+\gll bezichtigen\\
+     accuse\\\german
+\ex he
+\ex the
+\ex 
+\gll Ankunft\\
+     arrival\\\german
 \zl
-\item Zeichnen Sie die Bäume für folgende Beispiele:
+If you are uncertain as far as case assignment is concerned,\\
+you may use the Wiktionary: \url{https://de.wiktionary.org/}.
+\end{enumerate}
+
+
+} 
+
+\frame{
+\frametitle{Exercises -- II}
+
+\smallexamples
+\begin{enumerate}
+\setcounter{enumi}{1}
+\item Draw the trees for the following examples. NPs can be abbreviated.
 \eal
-\ex weil der Mann ihm ein Buch schenkt
-\ex because the man gave the book to him
+\ex
+\gll weil    Aicke dem        Kind  ein      Buch schenkt\\
+     because Aicke the.\DAT{} child a.\ACC{} book gives.as.a.present\\\hfill(German)%\german 
+\glt `because Aicke gives the child a book as a present'
+\ex because Kim gave a book to him
+\ex Sandy saw this yesterday.
 \ex
 \gll at Bjarne læste bogen\\
-     dass Bjarne las Buch.{\sc def}\\
-\glt `dass Bjarne das Buch las'
+     that Bjarne read book.\textsc{def}\\\hfill(\ili{Danish})
+\glt `that Bjarne read the book'
 \zl
 \end{enumerate}
 
@@ -1174,20 +1193,20 @@ sm edges
 } 
 
 
-\subsection{Adjunkte}
+\subsection{Adjuncts}
 
 \frame{
-\frametitle{Adjunkte}
+\frametitle{Adjuncts}
 
 \begin{itemize}
-\item Argumente werden von ihrem Kopf ausgewählt.
+\item Arguments are selected by their head.
 \pause
-\item Adjunkte wählen sich ihren Kopf.
+\item Adjuncts select their head.
 \pause
-\item Deutsch, Niederländisch, \ldots:\\
-      Adjunkte im Satz gehen an irgendeine Verbprojektion (Verb in Endstellung).
+\item Dutch, German, \ldots:\\
+      Adjuncts in sentences attach to any verbal projection (verb in final position).
 \pause
-\item Englisch, Dänisch, \ldots: Adjunkte gehen an VP.
+\item English, Danish, \ldots: Adjuncts attach to VP.
 
 \eal
 \ex that everybody \gruen{reads the book} \rot{promptly}
@@ -1199,10 +1218,10 @@ sm edges
 }
 
 \frame{
-\frametitle{Das \modm}
+\frametitle{The \textsc{mod} feature}
 
 \begin{itemize}
-\item Analog zu \spr und \comps gibt es \textsc{mod}:\\
+\item \textsc{mod} is parallel to \spr and \comps:\\
 
 \ea
 \begin{tabular}[t]{@{}l@{}}
@@ -1217,12 +1236,12 @@ Lexical item for \emph{brown}:\\
 sm edges
 [{\nbar}, baseline
   [{Adj[\textsc{mod} \ibox{2}]} [brown]]
-  [{\ibox{2} \nbar} [squirrel]]]
+  [{\ibox{2} \nbar}\hphantom{~\ibox{2}} [squirrel]]]
 \end{forest}\hfill\mbox{}
 \z
 
 \pause
-\item \modw ist eine Beschreibung oder \textit{none}.
+\item The \textsc{mod} value is a description or \type{none}.
 
 
 
@@ -1232,7 +1251,7 @@ sm edges
 }
 
 \frame{
-\frametitle{Das Kopf-Adjunkt-Schema}
+\frametitle{The Head-Adjunct-Schema}
 
 \centerline{%
 \begin{forest}
@@ -1243,11 +1262,11 @@ sm edges
 
 \pause
 \begin{itemize}
-\item Wie das \spr- oder \comps-Merkmal gibt es auch ein \modm.\\
-       Wert von {\sc mod} ist eine Beschreibung des zu modifizierenden Kopfes:
+\item \modf like \spr and \comps feature.\\
+      Value of  \textsc{mod} is a description of the head that can be modified:
 \begin{itemize}
-\item Deutsch: {\sc mod} V[{\sc ini}$-$]
-\item Englisch: {\sc mod} VP
+\item German: \textsc{mod} V[\textsc{ini}$-$]
+\item English: \textsc{mod} VP
 \end{itemize}
 \end{itemize}
 
@@ -1255,22 +1274,22 @@ sm edges
 }
 
 \frame{
-\frametitle{Freie Position der Adjunkte im Deutschen}
+\frametitle{Free placement of adjuncts in German -- I}
 
 \vfill
 \centerfit{
 \begin{forest}
 sm edges
 [{V[\spr \eliste, \comps \eliste]}, schema
-        [{Adv[\textsc{mod} \ibox{3} V]} [morgen] ]
+        [{Adv[\textsc{mod} \ibox{3} V]} [morgen;tomorrow] ]
         [{\ibox{3} V[\spr \eliste, \comps \eliste]}
-          [{\ibox{1} NP[\type{nom}]} [Aicke] ]
+          [{\ibox{1} NP[\type{nom}]} [Aicke;Aicke] ]
           [V\feattab{
               \spr \sliste{ }, \comps \sliste{ \ibox{1} } }
-            [{\ibox{2} NP[\type{acc}]} [das Buch, roof] ] 
+            [{\ibox{2} NP[\type{acc}]} [das Buch;the book, roof] ] 
             [V\feattab{
               \spr \sliste{  },\\
-              \comps \sliste{ \ibox{1}, \ibox{2} }} [liest] ] ]
+              \comps \sliste{ \ibox{1}, \ibox{2} }} [liest;reads] ] ]
 ] ]
 \end{forest}}
 
@@ -1283,7 +1302,7 @@ sm edges
 
 
 \frame{
-\frametitle{Freie Position der Adjunkte im Deutschen}
+\frametitle{Free placement of adjuncts in German -- II}
 
 \vfill
 
@@ -1292,16 +1311,16 @@ sm edges
 \begin{forest}
 sm edges
 [{V[\spr \eliste, \comps \eliste]},s sep+=1.5em
-          [{\ibox{1} NP[\type{nom}]} [Aicke] ]
+          [{\ibox{1} NP[\type{nom}]} [Aicke;Aicke] ]
           [V\feattab{
               \spr \sliste{ }, \comps \sliste{ \ibox{1} } }, schema
-            [{Adv[\textsc{mod} \ibox{3} V]} [morgen] ]
+            [{Adv[\textsc{mod} \ibox{3} V]} [morgen;tomorrow] ]
             [\ibox{3} V\feattab{
                 \spr \sliste{ }, \comps \sliste{ \ibox{1} } }
-              [{\ibox{2} NP[\type{acc}]} [das Buch, roof] ] 
+              [{\ibox{2} NP[\type{acc}]} [das Buch;the book, roof] ] 
               [V\feattab{
                 \spr \sliste{  },\\
-                \comps \sliste{ \ibox{1}, \ibox{2} }} [liest] ] ]
+                \comps \sliste{ \ibox{1}, \ibox{2} }} [liest;reads] ] ]
 ] ]
 \end{forest}}
 
@@ -1314,7 +1333,7 @@ sm edges
 
 
 \frame{
-\frametitle{Freie Position der Adjunkte im Deutschen}
+\frametitle{Free placement of adjuncts in German -- III}
 
 \vfill
 
@@ -1322,17 +1341,17 @@ sm edges
 \begin{forest}
 sm edges
 [{V[\spr \eliste, \comps \eliste]}
-    [{\ibox{1} NP[\type{nom}]} [Aicke] ]
+    [{\ibox{1} NP[\type{nom}]} [Aicke;Aicke] ]
       [V\feattab{
          \spr \sliste{ }, \comps \sliste{ \ibox{1} } }, s sep+=1em
-         [{\ibox{2} NP[\type{acc}]} [das Buch, roof] ] 
+         [{\ibox{2} NP[\type{acc}]} [das Buch;the book, roof] ] 
            [V\feattab{
               \spr \sliste{  },\\
               \comps \sliste{ \ibox{1}, \ibox{2} }}, schema 
-             [{Adv[\textsc{mod} \ibox{3} V]} [morgen] ]
+             [{Adv[\textsc{mod} \ibox{3} V]} [morgen;tomorrow] ]
              [\ibox{3} V\feattab{
                  \spr \sliste{  },\\
-                 \comps \sliste{ \ibox{1}, \ibox{2} }} [liest] ] ] ] ]
+                 \comps \sliste{ \ibox{1}, \ibox{2} }} [liest;reads] ] ] ] ]
 \end{forest}}
 
 %\centerline{{}[dass] Aicke das Buch morgen liest}
@@ -1342,7 +1361,7 @@ sm edges
 }
 
 \frame{
-\frametitle{Feste Position der Adjunkte im Englischen}
+\frametitle{Fixed position of adjuncts in English -- I}
 
 
 \vfill
@@ -1370,7 +1389,7 @@ sm edges
 }
 
 \frame{
-\frametitle{Feste Position der Adjunkte im Englischen}
+\frametitle{Fixed position of adjuncts in English -- II}
 
 \vfill
 
@@ -1402,8 +1421,8 @@ sm edges
 \frametitle{Details}
 
 \begin{itemize}
-\item Adjunkte ändern nichts an der Valenz/Sättigung.\\ 
-(Ob ich Gummibärchen einpacke o.\ nicht, beeinflusst meine Einkaufsliste nicht.)
+\item Adjuncts do not change the valence/saturation of a projection.\\
+(Whether I do put gummy bears into the trolley does not change the shopping list.)
 
 \vfill
 \centerline{%
@@ -1416,25 +1435,23 @@ sm edges
 \vfill
 
 \pause
-\item Adjunkte müssen vollständig sein. Sonst:
+\item Adjuncts must be complete. Otherwise:
 \ea[*]{
-Sandy read the book in.
+Sandy read the book in {\lightgray the closet}.
 }
 \z
 
 \pause
 \eal
 \ex[]{
-%\gll 
-dass Aicke eine Stunde liest
-%     that Aicke an   hour reads\\\german
-%\glt `Aicke is reading for an hour.'
+\gll dass Aicke eine Stunde liest\\
+     that Aicke an   hour reads\\\german
+\glt `Aicke is reading for an hour.'
 }
 \ex[*]{
-%\gll 
-dass Aicke Stunde liest
-%     that Aicke hour reads\\
-%\glt `Aicke is reading for an hour.'
+\gll dass Aicke Stunde liest\\
+     that Aicke hour reads\\
+\glt `Aicke is reading for an hour.'
 }
 \zl
 
@@ -1448,28 +1465,29 @@ dass Aicke Stunde liest
 \frametitle{Linking}
 
 \begin{itemize}
-\item Alle hier behandelten Sprachen haben eine Liste mit Valenzinformation:
+\item All languages covered here have a list with valence information:
 \ea
 \sliste{ NP, NP, NP }
 \z
 \pause
-\item Diese wird Argument Structure genannt (\argst). 
+\item It is called Argument Structure (\argst). 
 %\spr und \comps werden davon abgeleitet.
 \pause
-\item Die Kasus unterscheiden sich, das besprechen wir später.
+\item The case values differ (we come back to this later.)
 \pause
-\item Reihenfolge ist aber gleich.
+\item The order is parallel.
 \eal
-\ex dass das Kind dem Eichhörnchen die Nuss gibt\\
-%    that the child  the squirrel    the nut gives\\
-%\glt `that the child gives the squirrel the nut'
+\ex 
+\gll dass das Kind dem Eichhörnchen die Nuss gibt\\
+     that the child  the squirrel    the nut gives\\
+\glt `that the child gives the squirrel the nut'
 \ex that the child gives the squirrel the nut
 \zl
 \pause
-\item Verbindung zischen Syntax und Semantik ist für behandelte Sprachen gleich:
+\item Linking between syntax and semantics is the same for all Germanic languages:
 
 \ea
-Lexikoneintrag für \emph{gives}/\emph{gibt}:\\*
+Lexical entry for \emph{gives}/\emph{gibt}:\\*
 \scalebox{.9}{
 \ms{
 arg-st & \sliste{ NP\ind{1}, NP\ind{2}, NP\ind{3} }\\[2mm]
