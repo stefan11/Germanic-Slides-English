@@ -378,7 +378,7 @@ sm edges
 \pause
 \item But this is not required by the theory.
 
-This is important from a psycholinguistic point of view, since processing is incremental.
+This is important from a psycholinguistic point of view, since processing is incremental.\\
 \parencites{Marslen-Wilson75a,TSKES96a,SW2011a,Wasow2021a}
 \pause
 
@@ -395,7 +395,7 @@ This is important from a psycholinguistic point of view, since processing is inc
 
 \begin{itemize}
 \item There are several ways to deal with optional arguments.
-\item The most obviousDie offensichtlichste: Wir haben alternative Lexikoneinträge.
+\item The most obvious: alternative lexical items.
 % \ea
 % \begin{tabular}[t]{@{}l@{~}l@{~}l}
 % a. & \emph{gibt} `gives':            & \sliste{ NP[\type{nom}] }\\
@@ -418,38 +418,38 @@ b. & \emph{wartet}:          & \sliste{ NP[\type{nom}] }\\
 \subsection{Scrambling}
 
 \frame{
-\frametitle{Scrambling: Konstituentenstellung im Deutschen}
+\frametitle{Scrambling: constituent order in German}
 
 \vfill
 \centerfit{
 \begin{forest}
 sm edges
 [{S \eliste}
-   [{NP[\type{acc}]} [ihn] ]
+   [{NP[\type{acc}]} [ihn;him] ]
    [{V$'$\sliste{ NP[\type{acc}] } }
-      [{NP[\type{nom}]} [niemand] ]
-      [{V \sliste{ NP[\type{nom}], NP[\type{acc}]}} [kennt] ] ] ]
+      [{NP[\type{nom}]} [niemand;nobody] ]
+      [{V \sliste{ NP[\type{nom}], NP[\type{acc}]}} [kennt;knows] ] ] ]
 \end{forest}}
 \vfill
 \pause
 \begin{itemize}
-\item Ein beliebiges Element der Liste kann mit Kopf kombiniert werden.\\
-      $\to$ auch Abfolge Acc $<$ Nom analysierbar.\\
-      Liste mit restlichen Elementen wird nach oben gegeben.
+\item An arbitrary element of the list can be combined with the head.\\
+      $\to$ order Acc $<$ Nom can be analyzed.\\
+      List with remaining elements is passed upwards.
 \end{itemize}
 
 }
 
 
 
-\subsection{SVO: Dänisch/Englisch}
+\subsection{SVO: Danish/English}
 
 
 \frame{
-\frametitle{VP in SVO-Sprachen}
+\frametitle{VP in SVO langauges}
 
 \begin{itemize}
-\item Verben und Objekte bilden eine Wortgruppe:
+\item Verbs and objects form a group:
 \eal
 \ex John promised to read the book and [\alert{read the book}], he will.
 \ex He will [\alert{read the book}].
@@ -459,15 +459,15 @@ sm edges
 \ex \ldots{} [often [\alert{read the book}] slowly], he will.
 \zl
 \pause
-\item Gut zu erfassen mit zwei Valenzlisten:\\
-      eine für Komplemente (\comps für \textsc{complements}) und eine für das Subjekt (\textsc{spr} für \textsc{specifier}).
+\item Can be captured easily with two valency lists:\\
+      one for complements (\comps) and one for the subject (\textsc{spr} for \textsc{specifier}).
 \end{itemize}
 
 
 }
 
 \frame{
-\frametitle{Dänisch, Englisch, \ldots}
+\frametitle{Danish, English, \ldots}
 
 ~\vfill
 
@@ -495,12 +495,12 @@ sm edges
 \vfill
 
 \begin{itemize}
-\item Englisch ist eine SVO-Sprache:\\
-      Komplemente rechts des Verbs, Subjekt links
+\item English is a SVO language:\\
+      complements to the right of the verb, subjects to the left
 %\item Komplemente können nicht einfach umgestellt werden.
-\item Komplemente bilden mit dem Verb zusammen eine Phrase (VP = \comps \sliste{}).
+\item Verb and complements form a phrase (VP = \comps \sliste{}).
 
-      Diese wird mit dem Subjekt kombiniert.
+      This phrase is combined with the subject.
 \end{itemize}
 
 \vfill
@@ -509,15 +509,15 @@ sm edges
 
 
 \frame{
-\frametitle{Kein Scrambling}
+\frametitle{No scrambling}
 
 \begin{itemize}
-\item Dänisch, Englisch:\\
-      Elemente aus Valenzliste müssen von links nach rechts abgebunden werden.
+\item Danish, English, \ldots:\\
+      Elementes of the valence list have to be bound off from left to right.
 
 \pause
-\item Deutsch, Niederländisch:\\
-      Elemente können in beliebiger Reihenfolge abgebunden werden.
+\item German, Dutch, \ldots:\\
+      Elements can be combined with their heads in any order.
 
 %\pause
 %\item 
@@ -527,7 +527,7 @@ sm edges
 
 
 \frame{
-\frametitle{SVO: Ditransitive Verben: Abbindung von \comps von links}
+\frametitle{SVO: Ditransitive verbs: Saturation of \comps starting left}
 
 
 \centerline{
@@ -550,7 +550,8 @@ sm edges
          [to Sandy, roof, visible on=3-] ] ] ]
 \end{forest}}
 
-Bei kopffinalen Sprachen ohne Scrambling Abbindung von rechts.
+For head-final languages without scrambling, combination from right to left.
+
 
 
 }
@@ -587,20 +588,20 @@ Bei kopffinalen Sprachen ohne Scrambling Abbindung von rechts.
 
 
 \frame{
-\frametitle{Deutsch}
+\frametitle{German}
 
 
 
 \centerfit{\begin{forest}
 sm edges
 [{V[\spr \eliste, \comps \eliste]}, name=S
-        [{NP[\type{nom}]} [niemand] ]
+        [{NP[\type{nom}]} [niemand;nobody] ]
         [{V\feattab{
-              \spr \sliste{ }, \comps \sliste{ NP[\type{nom}] } }}, name = Vs
-          [{NP[\type{acc}]} [ihn] ] 
+              \spr \eliste, \comps \sliste{ NP[\type{nom}] } }}, name = Vs
+          [{NP[\type{acc}]} [ihn;him] ] 
           [V\feattab{
-              \spr \sliste{  },\\
-              \comps \sliste{ NP[\type{nom}], NP[\type{acc}]}} [kennt] ]
+              \spr \eliste,\\
+              \comps \sliste{ NP[\type{nom}], NP[\type{acc}]}} [kennt;knows] ]
 ] ]
 \node [right=4cm] at (S)
     {
@@ -612,12 +613,12 @@ sm edges
     };
 \end{forest}}
 
-Das Subjekt ist bei finiten Verben in der \compsl \citep{Pollard90a,Kiss95a}.
+The subject of a finite verb is in the \comps list \citep{Pollard90a,Kiss95a}.
 
-Abkürzungen: \begin{tabular}[t]{@{}l@{ = }l}
+Abbreviations: \begin{tabular}[t]{@{}l@{ = }l}
              S  & [\spr \eliste, \comps \eliste]\\
              VP & [\spr \sliste{ NP[\type{nom}] }, \comps \sliste{}]\\
-             V$'$ & alle anderen V-Projektionen (außer Verbalkomplexen)\\
+             V$'$ & all other projections of V (except verbal complexes)\\
              \end{tabular}
 
 }
@@ -628,11 +629,11 @@ Abkürzungen: \begin{tabular}[t]{@{}l@{ = }l}
 \frametitle{Immediate Dominance Schemata}
 
 \begin{itemize}
-\item In vielen theoretischen Arbeiten werden einfach Baumstrukturen gezeigt.
-\item Diese sind aber nicht einfach da.\\
-      Es gibt Regeln oder Schemata, die sie lizenzieren.
-\item \ZB \xbar-Schemata oder Regel für Phrasenstrukturen oder Dependenzstrukturen.
-\item Regeln für HPSG:
+\item Theoretical papers often just show tree structures.
+\item But they do not appear out of the blue.\\
+      There are rules or schemata that license them.
+\item For example, \xbar schemata or rules for phrase structure or dependency structures.
+\item Rules for HPSG:
 \ea\label{schema-head-spr-and-head-comps-preliminary}
 Specifier-Head Schema and Head-Complement Schema (preliminary)
 \begin{tabular}[t]{@{}l@{ }l@{}}
@@ -641,26 +642,26 @@ H[\comps \ibox{1}] & $\to$ H[\comps \sliste{ \ibox{2} } $\oplus$ \ibox{1}]\hspac
 \end{tabular}
 \z
 \pause
-\item H steht für \emph{head}. Die entsprechende Phrase ist der oder enthält den Kopf.
+\item H stands for \emph{head}. The respective phrase contains or is the head.
 
 \end{itemize}
 
 }
 
 
-\subsubsection{Spezifikator-Kopf-Strukturen}
+\subsubsection{Specifier head structures}
 
 \frame{
-\frametitle{Schemata als Teilbäumchen}
+\frametitle{Schemata as partial trees}
 
 \begin{itemize}
-\item Schemata lassen sich auch als Teilbäumchen darstellen.
+\item Schemata can be visualized as partial trees.
 \ea\label{schema-head-spr-and-head-comps-preliminary}
 Specifier-Head Schema (preliminary)\\
 H[\spr \ibox{1}] $\to$ H[\spr \ibox{1} $\oplus$ \sliste{ \ibox{2} }, \comps \eliste]\hspace{1em}\ibox{2}
 \z
 
-\item Specifier-Head Schema in Baum-Notation:
+\item Specifier-Head Schema in tree notation:
 \vfill
 %\centerline{
 \begin{forest}
@@ -817,11 +818,11 @@ sm edges
 }
 
 \frame{
-\frametitle{Die \compsl im Spezifikatorschema}
+\frametitle{Die \comps list im Spezifikatorschema}
 
 
 \begin{itemize}
-\item Die \compsl ist leer. 
+\item Die \comps list ist leer. 
 \vfill
 \centerline{
 \begin{forest}
@@ -1000,7 +1001,7 @@ b. & H[\spr \alert{\ibox{1}}, \comps \ibox{2}] & $\to$ H[\spr \alert{\ibox{1}}, 
 \frametitle{Scrambling}
 
 \begin{itemize}
-\item Bisher ein Element vom Anfang oder Ende der \compsl mit Kopf verbunden.
+\item Bisher ein Element vom Anfang oder Ende der \comps list mit Kopf verbunden.
 \pause
 \item Das funktioniert für das Englische, aber keine Erklärung für Scrambling.
 
