@@ -1,9 +1,9 @@
 %% -*- coding:utf-8 -*-
 \author{Stefan Müller}
 
-\subtitle{Valenz, Argumentanordnung und Adjunktstellung}
+\subtitle{Valence, argument order and adjunct placement}
 
-\section{Valenz, Argumentanordnung und Adjunktstellung}
+\section{Valence, argument order and adjunct placement}
 
 
 \huberlintitlepage[22pt]
@@ -12,14 +12,14 @@
 \outline{
 
 \begin{itemize}
-\item {Überblick über die germanischen Sprachen}
-\item Phänomene
-\item Phrasenstrukturgrammatiken und \xbart
-\item \alert{Valenz, Argumentanordnung und Adjunkte}
-\item Verbalkomplexbildung in den SOV-Sprachen
-\item Verbstellung: Verberst- und Verbzweitstellung
-\item Passiv
-\item Eingebettete Sätze
+%\item {Überblick über die germanischen Sprachen}
+\item Phenomena
+\item Phrase structure grammars and \xbar theory
+\item \alert{Valence, order of arguments and adjuncts}
+\item Verb clusters in SOV langauges
+\item Verbposition: Verb first and verb second order
+\item Passive
+%\item embedded sentences
 \end{itemize}
 
 }
@@ -27,11 +27,11 @@
 
 
 \frame{
-\frametitle{Literaturhinweis}
+\frametitle{Literature}
 
 
 
-Zu diesem Abschnitt lesen Sie bitte \citew[Kapitel~4]{MuellerGermanic}.
+Please read \citew[Chapter~4]{MuellerGermanic}.
 
 \begin{refsection}
 
@@ -43,32 +43,31 @@ Zu diesem Abschnitt lesen Sie bitte \citew[Kapitel~4]{MuellerGermanic}.
 
 \pause
 
-Die Theorie, die wir behandeln werden, ist Head-Driven Phrase Structure Grammar in einer
-abgerüsteten Version.
+The theory that is used in the following is Head-Driven Phrase Structure Grammar in a reduced version.
 
-Zu HPSG siehe \citew{ps,ps2,Sag97a,MuellerLehrbuch,HPSGHandbook}.
+For HPSG, see \citew{ps,ps2,Sag97a,MuellerLehrbuch,HPSGHandbook}.
 
 
 
 }
 
-\subsection{Valenz}
+\subsection{Valence}
 
 
 
 \frame{
-\frametitle{Vorhandensein bestimmter Konstituenten}
+\frametitle{Presence of certain constituents}
 
-Die Wortfolgen in (\mex{1}) sind keine wohlgeformten Sätze:
+The sequences in (\mex{1}) are not well-formed:
 \eal
 \ex[*]{
-\dass der        Delphin erwartet
+that the dolphin devours 
 }
 \ex[*]{
-\dass des        Kindes       der       Delphin den        Ball dem        Kind  gibt
+that of the dolphin the child the ball him his the child gives
 }
 \zl
-Bei (\mex{0}a) fehlt etwas, bei (\mex{0}b) ist etwas zu viel.
+Something is missing in (\mex{0}a), there is too much in (\mex{0}b).
 
 
 }
@@ -77,7 +76,7 @@ Bei (\mex{0}a) fehlt etwas, bei (\mex{0}b) ist etwas zu viel.
 \frametitle{Valenz in der Chemie und in der Linguistik}
 
 
-\citet{Tesniere59a-de} übernimmt das Konzept der Valenz aus der Chemie:
+\citet{Tesniere59a-Eng} adapts the concept of valence from chemistry:
 
 
 \vfill
@@ -101,105 +100,110 @@ Bei (\mex{0}a) fehlt etwas, bei (\mex{0}b) ist etwas zu viel.
 }
 
 \frame{
-\frametitle{Argumente}
+\frametitle{Arguments}
 
-NPen in (\mex{1}) sind Argumente der jeweiligen Verben:
+NPs in (\mex{1}) are arguments of the respective verbs:
 \eal
 \ex[]{
-%\gll
+\gll
 \dass der        Delphin den        Menschen erwartet\\
-%     \that{}  the.\NOM{} dolphin den.\ACC{} human   expects\\
-%\glt `that the dolphin expects the human'
+     \that{}  the.\NOM{} dolphin den.\ACC{} human   expects\\
+\glt `that the dolphin expects the human'
 }
 \ex[]{
-%\gll 
+\gll 
 {}[dass] der        Delphin dem        Kind  den        Ball gibt\\
-%     \that{}  the.\NOM{} dolphin the.\DAT{} child the.\ACC{} ball gives\\
-%\glt `that the dolphin gives the child the ball'
+     \that{}  the.\NOM{} dolphin the.\DAT{} child the.\ACC{} ball gives\\
+\glt `that the dolphin gives the child the ball'
 }
 \zl
 
-Meistens füllen syntaktische Argumente auch eine semantische Rolle (\zb Gebender, Agens, Actor,
+Syntactic arguments usually fill a semantic role (\zb giver, agent, actor,
 \ldots).\nocite{Dowty91a,VanValin99a-u}
 
 \citet[Chapter~48]{Tesniere2015a-u}: 
 
-Theaterszene: Was wird minimal gebraucht, um einen Geben-Vorgang zu spielen?
+drama scene: What is needed to act out a giving event?
 
 \begin{itemize}
-\item einen Geber*in
-\item etwas Gegebenes
-\item einen Empfänger*in
+\item a giver
+\item something given
+\item a givee (recipient)
 \end{itemize}
 
 }
 
 \frame{
-\frametitle{Adjunkte}
+\frametitle{Adjucts}
 
 \begin{itemize}
-\item Zusätzlich zu den Argumenten können Adjunkte im Satz vorkommen:
+\item There can be adjuncts in addition to arguments:
 
 \eal
 \ex
-%\gll
+\gll
 \dass{} der        Delphin dem        Kind  \alert{schnell} den        Ball gibt\\
-% \that{} the.\NOM{} dolphin the.\DAT{} child quickly the.\ACC{} ball gives\\
-%\glt `that the dolphin gives the child the ball quickly'
+\that{} the.\NOM{} dolphin the.\DAT{} child quickly the.\ACC{} ball gives\\
+\glt `that the dolphin gives the child the ball quickly'
 \ex that the dolphin gives the child the ball \alert{quickly}
 \zl
 
 \pause
 
-\item Adjunkte tragen zusätzliche Information bei, füllen aber keine semantische Rolle.
+\item Adjuncts convey additional information but do not fill a semantic role.
 
 \end{itemize}
 
 }
 
 \frame{
-\frametitle{Optionale Argumente}
+\frametitle{Optional arguments}
 
-Argumente können fast immer weggelassen werden, wenn der Kontext entsprechende Information enthält.
+Almost all arguments can be omitted, provided context provides enough info.
 
 \eal
 \ex 
-%\gll 
-Sie gibt Geld.
-%     she gives money\\
-%\glt `She gives money.'
+\gll Sie gibt Geld.\\
+     she gives money\\
+\glt `She gives money.'
 \ex 
-%\gll 
-Sie gibt den Armen.
-%     she gives the poor\\
-%\glt `She gives to the poor.'
+\gll Sie gibt den Armen.\\
+     she gives the poor\\
+\glt `She gives to the poor.'
 \ex\label{ex-sie-gibt} 
-%\gll 
-Sie gibt.
-%     she gives\\
+\gll  Sie gibt.\\
+     she gives\\
 \ex 
-%\gll 
-Gib!
-%     give\\
+\gll Gib!\\
+     give\\
 \zl
 
-Im Kontext eines Skat-Spiels ist klar, was gegeben wird und wer die Empfänger sind.
+If we are playing the card game skat, it is clear who gives what to whom.
 
-Bei einigen wenigen Verben kann man die Argumente nicht weglassen:
+}
+
+\frame{
+\frametitle{Obligatory arguments (rare)}
+
+There are some verbs which really have obligatory arguments:
 \eal
-\ex verschlingen
-\ex erwarten
+\ex 
+\gll verschlingen\\
+     devour\\\german
+\ex 
+\gll erwarten\\
+     await\\
 \zl
 
-Argumente können optional sein, Adjunkte sind es immer.
+Arguments may be optional, arguments always are. 
 
 
 }
 
 \frame{
-\frametitle{Chemie und optionale Elemente}
+\frametitle{Chemistry and optional elements}
 
-Die Analogie zu chemischen Verbindungen ist hilfreich, aber die optionalen Argumente sind verwirrend:
+The analogy with chemical bonds is helpful, but optional arguments remain confusing:
 \eal
 \ex Kirby helps Sandy.
 \ex Kirby helps.
@@ -219,50 +223,49 @@ Die Analogie zu chemischen Verbindungen ist hilfreich, aber die optionalen Argum
 \end{forest}
 \hfill\mbox{}
 
-Lösung: Unterscheidung zwischen syntaktischer und semantischer Valenz.
+Solution: syntactic and semantic valency.
 
-Die Theateranalogie hilft uns, semantische Argumente zu finden,\\
-die Analogie zur Chemie taugt eher für syntaktische Argumente. 
+Theater analogy helps us to find semantic arguments,\\
+chemistry analogy helps for syntactic arguments.
 
-Man muss ein spezielles, syntaktisch einstelliges Verb für (\mex{0}b) annehmen.
+One has to assume a special, one place verb for (\mex{0}b).
 
 }
 
 \frame{
-\frametitle{Shoppen statt Drama}
+\frametitle{Shopping instead of drama}
 
 \begin{itemize}
-\item Vergleich mit Einkauf besser:\\
-Wir wollen Nudeln mit Tofu und Tomatensoße machen.
+\item The analogy to shopping is better:\\
+We want to prepare pasta with tofu and tomato sauce.
 
-Für Tomatensoße brauchen wir Zwiebeln.
+For tomato sauce we need onions.
 
-\item Alle Zutaten kommen auf die Einkaufsliste.
+\item All ingredients are added to a shopping list.
 
-\item Im Laden merken wir, dass es keinen Tofu gibt.
+\item The shop does not have tofu.
 
-\item Macht nichts, geht auch ohne: Tofu ist optional.
+\item No problem, we can do pasta without tofu: tofu is optional.
 
-\item Nudeln gibt es. 10.000 Sorten.
+\item There are noodles. 10.000 types of pasta.
 
-\item Tomaten und Zwiebeln. Fertig.
+\item Tomatos and onions. Done.
 
-\item Ach. Gummibärchen. Wie? Standen nicht auf der Liste?
+\item Ah. Gummy bears. What? They were not on the list?
 
-Gummibären sind Adjunkte!
+Gummy bears are adjuncts!
 
 \end{itemize}
 
 }
 
 \frame{
-\frametitle{Nudeln, Tomaten, Zwiebeln und Syntax}
+\frametitle{Pasta, tomatos, onions and syntax}
 
 \begin{itemize}
-\item Es gibt mehrere Wege, sicherzustellen, dass alles, was gebraucht wird, da ist.
+\item There are several ways to make sure that all that is needed is present.
 
-\item Phrasenstrukturen wie bei GPSG (siehe vorige Sitzung)
-
+\item Phrase structures as in GPSG 
 \ea
 \label{ditrans-schema-two}
 \begin{tabular}[t]{@{}l@{ }l@{ }l}
@@ -271,18 +274,17 @@ S  & $\to$ & NP[\type{nom}] NP[\type{dat}] NP[\type{acc}] V[\type{ditransitive}]
 \z
 
 \pause
-\item Diese wurden dann aber für lexikon-orientierte Ansätze aufgegeben.\\
+\item These were dropped in favour of lexical approaches\\
   \parencites{Jacobson87b}[Section~5.5]{MuellerGT-Eng1}{MWArgSt}
 \pause
-\item Gründe: 
+\item reasons: 
 \begin{itemize}
-\item Voranstellung von Teilphrasen (Partial VP Fronting)\\ \citep{Nerbonne86a,Johnson86a} 
+\item Partial VP Fronting \citep{Nerbonne86a,Johnson86a} 
 \pause
-\item Interaktionen mit Morphologie \citep[Section~5.5.1]{MuellerGT-Eng1}
+\item Interactions with morphologie \citep[Section~5.5.1]{MuellerGT-Eng1}
 \end{itemize}
 \pause
-\item Come Back der phrasalen Ansätze in Construction Grammar \citep{Goldberg95a}, diese
-  funktionieren aber nicht.
+\item Come back of phrasal approaches in Construction Grammar \citep{Goldberg95a}. These do not work.
 
 \parencites{Mueller2006d,MuellerPersian,MuellerUnifying,MWArgSt,MWArgStReply,MuellerFCG,MuellerLFGphrasal,MuellerPotentialStructure,MuellerGT-Eng4,MuellerCxG}
 
@@ -294,26 +296,26 @@ S  & $\to$ & NP[\type{nom}] NP[\type{dat}] NP[\type{acc}] V[\type{ditransitive}]
 \frametitle{Valenzlisten}
 
 \begin{itemize}
-\item Argumente werden in Listen repräsentiert:
+\item Arguments are represented in lists:
 \ea
 \label{valence-specifications-German}
 \begin{tabular}[t]{@{}l@{~}l@{~}l}
-a. & \emph{schläft}:        & \sliste{ NP[\type{nom}] }\\
-b. & \emph{kennt}:           & \sliste{ NP[\type{nom}], NP[\type{acc}] }\\
+a. & \emph{schläft} `sleeps':         & \sliste{ NP[\type{nom}] }\\
+b. & \emph{kennt} `knows':           & \sliste{ NP[\type{nom}], NP[\type{acc}] }\\
 %b. & \emph{unterstützt}:  & \sliste{ NP[\type{nom}], NP[\type{acc}] }\\
-c. & \emph{hilft}:           & \sliste{ NP[\type{nom}], NP[\type{dat}] }\\
-d. & \emph{gibt}:            & \sliste{ NP[\type{nom}], NP[\type{dat}], NP[\type{acc}] }\\
-e. & \emph{wartet}:          & \sliste{ NP[\type{nom}], PP[\type{auf}] }\\
+c. & \emph{hilft} `helps':           & \sliste{ NP[\type{nom}], NP[\type{dat}] }\\
+d. & \emph{gibt} `gives':            & \sliste{ NP[\type{nom}], NP[\type{dat}], NP[\type{acc}] }\\
+e. & \emph{wartet} `waits':          & \sliste{ NP[\type{nom}], PP[\type{auf}] }\\
 \end{tabular}
 \z
 
-NP[\type{nom}] ist dann so was wie \emph{Nudeln}.\\
-Es gibt ganz viele verschiedene Möglichkeiten, diese Valenzanforderung zu befriedigen: \emph{sie},
-\emph{das Kind}, \emph{der lachende Delphin}, \ldots
+NP[\type{nom}] stands for something like \emph{Nudeln}.\\
+There are many ways to satisfy these valence requirements:\\
+\emph{sie} `she', \emph{das Kind} `the child', \emph{der lachende Delphin} `the laughing dolphin', \ldots
 
 \pause
-\item Elemente der Listen sind in einer bestimmten Reihenfolge angeordnet. Diese entsprechen der
-  Reihenfolge im Englischen und der unmarkierten Reihenfolge im Deutschen \citep{Hoehle82a}. 
+\item Elements of lists are ordered in a certain order. This order corresponds to the order in
+  English and other languages with fixed order and to the unmarked order in German \citep{Hoehle82a}. 
 
 
 \end{itemize}
@@ -324,7 +326,7 @@ Es gibt ganz viele verschiedene Möglichkeiten, diese Valenzanforderung zu befri
 
 
 \frame{
-\frametitle{Valenzgesteuerter Strukturaufbau}
+\frametitle{Valence determining structure}
 
 \vfill
 \centerfit{
@@ -341,14 +343,14 @@ sm edges
 
 \vfill
 \begin{itemize}
-\item Valenzanforderung ist in einer Liste repräsentiert
+\item Valence requirements are represented in a list.
 \pause
-\item Ein Element der Liste wird mit dem Kopf kombiniert.\\
+\item One element of the list is combined with a head.\\
 \pause\pause
-      Liste mit restlichen Elementen wird nach oben gegeben.
+      List with remaining elements is passed up.
 \pause\pause\pause
-\item Wie einkaufen mit App:\\
-      Ein Element nach dem anderen wird aus der Liste entfernt.
+\item Like shopping with an app:\\
+      One element after the other is removed from the list.
 %\pause
 %\item Wichtig: Die Theorie sagt nichts darüber aus welcher
 \end{itemize}
@@ -356,7 +358,7 @@ sm edges
 }
 
 \frame{
-\frametitle{Beschränkungsbasierte Theorien und Psycholinguistik}
+\frametitle{Constraint-based theories and psycholinguistics}
 
 \centerfit{
 \begin{forest}
@@ -372,11 +374,11 @@ sm edges
 \end{forest}}
 
 \begin{itemize}
-\item Erklärungen im Folgenden immer von unten nach oben.
+\item I explain things bottom up.
 \pause
-\item Das ist in Theorien wie HPSG aber nicht zwingend. 
+\item But this is not required by the theory.
 
-Sehr wichtig aus psycholinguistischer Sicht, denn Verarbeitung ist inkrementell.
+This is important from a psycholinguistic point of view, since processing is incremental.
 \parencites{Marslen-Wilson75a,TSKES96a,SW2011a,Wasow2021a}
 \pause
 
@@ -389,11 +391,11 @@ Sehr wichtig aus psycholinguistischer Sicht, denn Verarbeitung ist inkrementell.
 
 
 \frame{
-\frametitle{Optionale Argumente?}
+\frametitle{Optional Arguments?}
 
 \begin{itemize}
-\item Es gibt mehrere Möglichkeiten, mit optionalen Argumenten umzugehen.
-\item Die offensichtlichste: Wir haben alternative Lexikoneinträge.
+\item There are several ways to deal with optional arguments.
+\item The most obviousDie offensichtlichste: Wir haben alternative Lexikoneinträge.
 % \ea
 % \begin{tabular}[t]{@{}l@{~}l@{~}l}
 % a. & \emph{gibt} `gives':            & \sliste{ NP[\type{nom}] }\\
@@ -1481,3 +1483,6 @@ cont   & \ms[give]{
 
 
 }
+
+
+%      <!-- Local IspellDict: en_US-w_accents -->
