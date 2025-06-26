@@ -269,14 +269,14 @@ sm edges
 \begin{forest}
 sm edges
 [S
-  [\gruen<2>{NP$_i$} [das Buch, roof] ]
+  [\gruen<2>{NP$_i$} [das Buch;the book, roof] ]
   [S/\gruen<2>{NP}
      [V \sliste{ S\gruen<1>{$/\!/$V} } 
-        [\gruen<1>{V} [liest$_j$] ] ]
+        [\gruen<1>{V} [liest$_j$;reads] ] ]
      [S\gruen<1>{$/\!/$V}\!\gruen<2>{/NP}
         [NP\gruen<2>{/NP} [\trace$_i$] ]
         [V$'$\gruen<1>{$\!/\!/$V}
-           [NP [Conny] ]
+           [NP [Conny;Conny] ]
            [V\gruen<1>{$\!/\!/$V} [\_$_j$] ] ] ] ] ] ]
 %% \draw[connect] (NP/NP) [bend right] to (S//V\!/NP.south east);
 %% \draw[connect] (S//V\!/NP.north east) [bend right] to (S/NP.east);
@@ -298,10 +298,10 @@ sm edges
 \begin{forest}
 sm edges
 [S
-   [NP$_i$ [bogen;Buch.\textsc{def} ] ]
+   [NP$_i$ [bogen;book.\textsc{def} ] ]
       [S/NP
          [V \sliste{ S$/\!/$V }
-           [V [læser$_j$;liest] ] ]
+           [V [læser$_j$;reads] ] ]
            [S$/\!/$V\!/NP
              [NP [Conny;Conny] ]
              [VP$\!/\!/$V$\!/$NP
@@ -380,10 +380,10 @@ The sentences look the same, but have a completely different structure:
 \begin{forest}
 sm edges
 [S
-  [NP [Conny;Conny]]
+  [NP [Conny]]
   [VP
-    [V [reads;liest]]
-    [NP [a book;ein Buch,baseline,roof]]]]
+    [V [reads]]
+    [NP [a book,baseline,roof]]]]
 \end{forest}}
 \hfill
 \visible<2->{\scalebox{.8}{%
@@ -393,12 +393,12 @@ sm edges
    [NP$_i$ [Conny;Conny] ]
       [S/NP
          [V \sliste{ S$/\!/$V }
-           [V [læser$_j$;liest] ] ]
+           [V [læser$_j$;reads] ] ]
            [S$/\!/$V\!/NP
              [NP/NP [\trace$_i$ ] ]
              [VP$\!/\!/$V
                [V$\!/\!/$V  [\_$_j$] ]
-               [NP [en bog;ein Buch,baseline,roof] ] ] ] ] ] 
+               [NP [en bog;a book,baseline,roof] ] ] ] ] ] 
 %% \draw[connect] (NP/NP.north east) [bend right] to (V/V.south east);
 %% \draw[connect] (V/V.north east) [bend right] to (S//V\!/NP.south east);
 %% \draw[connect] (S//V\!/NP.north east) [bend right] to (S/NP.east);
@@ -409,14 +409,14 @@ sm edges
 \begin{forest}
 sm edges
 [S
-   [NP$_i$ [Conny] ]
+   [NP$_i$ [Conny;Conny] ]
       [S/NP
          [V \sliste{ S$/\!/$V }
-           [V [liest$_j$] ] ]
+           [V [liest$_j$;reads] ] ]
            [S$/\!/$V\!/NP
              [NP/NP [\trace$_i$ ] ]
              [V$'$$\!/\!/$V
-               [NP [ein Buch,baseline,roof] ] 
+               [NP [ein Buch;a book,baseline,roof] ] 
                [V$\!/\!/$V  [\_$_j$] ] ] ] ] ] 
 \end{forest}}}
 
@@ -456,6 +456,18 @@ fronting of a constituent.
 		give me the book\\
 \zl
 
+\end{itemize}
+
+}
+
+\frame{
+	%\frametitle{V2 in den germanischen Sprachen}
+	\frametitle{V2 in the Germanic languages}
+	
+	\smallexamples
+	\smallframe
+
+\begin{itemize}
 %\item V2-Sätze nicht unbedingt Aussagen:
 \item V2 sentences not necessarily statements:
 
@@ -478,6 +490,6 @@ fronting of a constituent.
 
 \end{itemize}
 
-\pause\pause\pause
+%\pause\pause\pause
 
 }
