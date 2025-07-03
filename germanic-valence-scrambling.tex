@@ -16,7 +16,7 @@
 \item Phenomena
 \item Phrase structure grammars and \xbar theory
 \item \alert{Valence, order of arguments and adjuncts}
-\item Verb clusters in SOV langauges
+\item Verb clusters in SOV languages
 \item Verbposition: Verb first and verb second order
 \item Passive
 %\item embedded sentences
@@ -338,7 +338,7 @@ sm edges
   [{V$'$\sliste{ \blau<4>{NP[\type{nom}]} } },visible on=3-
     [\blau<3>{NP[\type{acc}]}, visible on=2-
       [ihn,visible on=2-] ]
-    [{V \sliste{ \blau<4>{NP[\type{nom}]}, \blau<3>{NP[\type{acc}]}}} [kennt]] ] ]
+    [{V \sliste{ \blau<4>{NP[\type{nom}]}, \blau<3>{NP[\type{acc}]} }} [kennt]] ] ]
 \end{forest}}
 
 \vfill
@@ -428,7 +428,7 @@ sm edges
    [{NP[\type{acc}]} [ihn;him] ]
    [{V$'$\sliste{ NP[\type{acc}] } }
       [{NP[\type{nom}]} [niemand;nobody] ]
-      [{V \sliste{ NP[\type{nom}], NP[\type{acc}]}} [kennt;knows] ] ] ]
+      [{V \sliste{ NP[\type{nom}], NP[\type{acc}] }} [kennt;knows] ] ] ]
 \end{forest}}
 \vfill
 \pause
@@ -479,7 +479,7 @@ sm edges
       \spr \sliste{ NP[\type{nom}] }, \comps \sliste{} }, name=VP
      [V\feattab{
          \spr \sliste{ NP[\type{nom}] },\\
-         \comps \sliste{ NP[\type{acc}]}} [knows] ]
+         \comps \sliste{ NP[\type{acc}] }} [knows] ]
         [{NP[\type{acc}]} [him] ] ] ]
 \node [right=4cm] at (S)
     {
@@ -601,7 +601,7 @@ sm edges
           [{NP[\type{acc}]} [ihn;him] ] 
           [V\feattab{
               \spr \eliste,\\
-              \comps \sliste{ NP[\type{nom}], NP[\type{acc}]}} [kennt;knows] ]
+              \comps \sliste{ NP[\type{nom}], NP[\type{acc}] }} [kennt;knows] ]
 ] ]
 \node [right=4cm] at (S)
     {
@@ -915,7 +915,7 @@ sm edges
          \comps \sliste{ \ibox{2} NP[\type{acc}] }}, visible on=2- 
         [V\feattab{
            \spr \sliste{ \ibox{1} NP[\type{nom}] },\\
-           \comps \sliste{ \ibox{3} NP[\type{acc}], \ibox{2} NP[\type{acc}]}} [gave] ]
+           \comps \sliste{ \ibox{3} NP[\type{acc}], \ibox{2} NP[\type{acc}] }} [gave] ]
         [{\ibox{3} NP[\type{acc}]} [the child,roof] ] ]
      [{\ibox{2} NP[\type{acc}]}, visible on=3- 
        [a book,roof, visible on=3- ] ] ] ]
@@ -957,8 +957,8 @@ his his him gave the child a book
 \ea\label{schema-head-spr-and-head-comps}
 Specifier-Head Schema and Head-Complement Schema (final)
 \begin{tabular}[t]{@{}l@{~}l@{ }l@{}}
-a. & H[\spr \ibox{1}, \comps \alert{\ibox{2}}] & $\to$ H[\spr \ibox{1} $\oplus$ \sliste{ \ibox{3} }, \comps \alert{\ibox{2}} \eliste]\hspace{1em}\ibox{3}  \\
-b. & H[\spr \alert{\ibox{1}}, \comps \ibox{2}] & $\to$ H[\spr \alert{\ibox{1}}, \comps \ibox{2} $\oplus$ \sliste{ \ibox{3} }]\hspace{1em}\ibox{3} \\
+a. & H[\spr \ibox{1}, \comps{} \alert{\ibox{2}}] & $\to$ H[\spr \ibox{1} $\oplus$ \sliste{ \ibox{3} }, \comps{} \alert{\ibox{2}} \eliste]\hspace{1em}\ibox{3}  \\
+b. & H[\spr{} \alert{\ibox{1}}, \comps \ibox{2}] & $\to$ H[\spr{} \alert{\ibox{1}}, \comps \ibox{2} $\oplus$ \sliste{ \ibox{3} }]\hspace{1em}\ibox{3} \\
 \end{tabular}
 \z
 
@@ -1009,18 +1009,18 @@ b. & H[\spr \alert{\ibox{1}}, \comps \ibox{2}] & $\to$ H[\spr \alert{\ibox{1}}, 
 \begin{forest}
 [{H[\comps \rot{\ibox{1}} $\oplus$ \blau{\ibox{2}}]}
   [\gruen{\ibox{3}}]
-  [{H[\comps  \rot{\ibox{1}} $\oplus$ \sliste{ \gruen{\ibox{3}} } $\oplus$ \blau{\ibox{2}}  ]}]]
+  [{H[\comps  \rot{\ibox{1}} $\oplus$ \sliste{ \gruen{\ibox{3}} } $\oplus$ \blau{\ibox{2}}  ] }]]
 \end{forest}
 \end{figure}
 
 \item Length of \ibox{1} and \ibox{2} is not constrained. For a ditransitive verb:
 
 \eal
-\ex \rot{\eliste{}} $\oplus$ \sliste{ \gruen{NP[\type{nom}]} } $\oplus$ \blau{\sliste{ NP[\type{dat}], NP[\type{acc}] }}
+\ex \rot{\eliste{}} $\oplus$ \sliste{ \gruen{NP[\type{nom}] } } $\oplus$ \blau{\sliste{ NP[\type{dat}], NP[\type{acc}] }}
 \pause
-\ex \rot{\sliste{ NP[\type{nom}] }} $\oplus$ \sliste{ \gruen{NP[\type{dat}]} } $\oplus$ \blau{\sliste{ NP[\type{acc}] }} 
+\ex \rot{\sliste{ NP[\type{nom}] }} $\oplus$ \sliste{ \gruen{NP[\type{dat}] } } $\oplus$ \blau{\sliste{ NP[\type{acc}] }} 
 \pause
-\ex \rot{\sliste{ NP[\type{nom}], NP[\type{dat}] }} $\oplus$ \sliste{ \gruen{NP[\type{acc}]} } $\oplus$ \blau{\eliste} 
+\ex \rot{\sliste{ NP[\type{nom}], NP[\type{dat}] }} $\oplus$ \sliste{ \gruen{NP[\type{acc}] } } $\oplus$ \blau{\eliste} 
 \zl
 %So \ibox{3} in Figure~\ref{fig-head-comp-free} would be \npnom in (\mex{0}a), \npdat in (\mex{0}b) and \npacc in (\mex{0}c).
 
@@ -1089,7 +1089,7 @@ dem Kind  ein Buch gibt\\
 
 % \begin{forest}
 % sm edges
-% [{V[\comps \sliste{ }]},s sep+=1em
+% [{V[\comps \eliste]},s sep+=1em
 %   [{V[\comps \sliste{ \ibox{1} }]}
 %     [\ibox{2} \npdat [dem Kind;the child,roof]]
 %     [{V[\comps \sliste{ \ibox{2}, \ibox{1} }]} [\ibox{3} \npnom [niemand;nobody]]
@@ -1099,7 +1099,7 @@ dem Kind  ein Buch gibt\\
 
 % \begin{forest}
 % sm edges
-% [{V[\comps \sliste{ }]}
+% [{V[\comps \eliste]}
 %   [{V[\comps \sliste{ \ibox{1} }]},s sep+=1em
 %     [{V[\comps \sliste{ \ibox{2}, \ibox{1} }]} [\ibox{3} \npnom [niemand;nobody]]
 %        [{V[\comps \sliste{ \ibox{3}, \ibox{2}, \ibox{1} }]}  [vorliest;\textsc{part}.reads]]]
@@ -1110,7 +1110,7 @@ dem Kind  ein Buch gibt\\
 \centerline{%
 \begin{forest}
 sm edges
-[{V[\comps \sliste{ }]}
+[{V[\comps \eliste]}
   [{V[\comps \sliste{ \ibox{1} }]},s sep+=1em
     [{V[\comps \sliste{ \ibox{2}, \ibox{1} }]} [\ibox{3} \npnom [niemand;nobody]]
        [{V[\comps \sliste{ \ibox{3}, \ibox{2}, \ibox{1} }]}  [vorliest;\textsc{part}.reads]]]
@@ -1263,7 +1263,7 @@ sm edges
 \pause
 \begin{itemize}
 \item \modf like \spr and \comps feature.\\
-      Value of  \textsc{mod} is a description of the head that can be modified:
+      Value of \textsc{mod} is a description of the head that can be modified:
 \begin{itemize}
 \item German: \textsc{mod} V[\textsc{ini}$-$]
 \item English: \textsc{mod} VP
@@ -1285,7 +1285,7 @@ sm edges
         [{\ibox{3} V[\spr \eliste, \comps \eliste]}
           [{\ibox{1} NP[\type{nom}]} [Aicke;Aicke] ]
           [V\feattab{
-              \spr \sliste{ }, \comps \sliste{ \ibox{1} } }
+              \spr \eliste, \comps \sliste{ \ibox{1} } }
             [{\ibox{2} NP[\type{acc}]} [das Buch;the book, roof] ] 
             [V\feattab{
               \spr \sliste{  },\\
@@ -1313,10 +1313,10 @@ sm edges
 [{V[\spr \eliste, \comps \eliste]},s sep+=1.5em
           [{\ibox{1} NP[\type{nom}]} [Aicke;Aicke] ]
           [V\feattab{
-              \spr \sliste{ }, \comps \sliste{ \ibox{1} } }, schema
+              \spr \eliste, \comps \sliste{ \ibox{1} } }, schema
             [{Adv[\textsc{mod} \ibox{3} V]} [morgen;tomorrow] ]
             [\ibox{3} V\feattab{
-                \spr \sliste{ }, \comps \sliste{ \ibox{1} } }
+                \spr \eliste, \comps \sliste{ \ibox{1} } }
               [{\ibox{2} NP[\type{acc}]} [das Buch;the book, roof] ] 
               [V\feattab{
                 \spr \sliste{  },\\
@@ -1343,7 +1343,7 @@ sm edges
 [{V[\spr \eliste, \comps \eliste]}
     [{\ibox{1} NP[\type{nom}]} [Aicke;Aicke] ]
       [V\feattab{
-         \spr \sliste{ }, \comps \sliste{ \ibox{1} } }, s sep+=1em
+         \spr \eliste, \comps \sliste{ \ibox{1} } }, s sep+=1em
          [{\ibox{2} NP[\type{acc}]} [das Buch;the book, roof] ] 
            [V\feattab{
               \spr \sliste{  },\\
